@@ -69,7 +69,6 @@ const processHaltestellenAndStations = function(haltestellen, stations) {
 				stop_lat : Number(haltestelle.BREITE)
 			};
 		} else {
-			console.log("Station with DS100 " + haltestelle.DS100 + " or EVA_NR " + haltestelle.EVA_NR + " could not be found.")
 			return null;
 		}
 	}).filter(haltestelle => !!haltestelle);
